@@ -6,7 +6,13 @@ on:
 
 jobs:
   job1:
+   # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
       - name: Runs scripts with env
         run: node client.js
         env:
