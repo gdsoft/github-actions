@@ -1,0 +1,14 @@
+name: Github Actions Test
+
+on:
+  push:
+    branches: [ develop ]
+
+jobs:
+  job1:
+    steps:
+      - name: Runs scripts with env
+        run: node client.js
+        env:
+          POSTGRES_HOST: postgres
+          POSTGRES_PORT: 5432
