@@ -20,5 +20,5 @@ jobs:
           POSTGRES_PORT: 5432
 
       - name: Run bash script
-        run: bash_script.sh
+        run: ./bash_script.sh
         shell: bash
